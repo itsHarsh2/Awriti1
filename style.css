@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo img{
+    width: 6vw;
+    margin-left: 2vw;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    
+}
+
+
+nav{
+    margin-top: 4vh;
+    margin-left: 4vw;
+    display: inline-flex;
+   
+}
+nav li{
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 13.5px;
+    display: block;
+    text-align: center;
+    /* padding: 20px 25px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul{
+    background-color: white;
+    width: 100%;
+}
+nav ul li{
+    margin-right: 10px;
+    
+}
+
+nav ul li ul.TOPWEAR li{
+    display: block;
+    
+   
+}
+
+nav ul li ul.TOPWEAR{
+    width:170%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+  
+} 
+
+
+nav ul li a:hover{
+    color: rgb(138, 20, 20);
+   
+}
+
+nav ul li:hover ul.TOPWEAR{
+    display: block;
+    
+}
+
+nav ul li a{
+    width: max-content;
+    
+}
+
+
+
+.email{
+    margin-top: 4vh;
+}
+.email input{
+border: 1px solid rgb(236, 227, 227);
+border-radius: 3px;
+padding: 7px;
+padding-right: 6vw;
+color: white;
+}
+
+.email button{
+    background-color: rgb(255, 255, 255);
+    color:rgb(10, 7, 7);
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+
+   .section1{
+    display: flex;
+    margin-left: 3vw;
+   }
+
+   .user{
+    margin-top: 5vh;
+    margin-left: 2vw;
+    cursor: pointer;
+   }
+
+   .cart{
+    margin-top: 5vh;
+    margin-left: 2vw;
+    cursor: pointer;
+   }
+
+/*                                   slider                  */
+
+.section{
+    margin-left: 3vw;
+    width: 100%;
+    
+}
+.slider.img{
+   max-width: 70%;
+   
+}
+/* -----------------------------------section 3------------------------------------------------ */
+.section3{
+    max-width: 100%;
+}
+.section3 .heading{
+    margin-top: 2vh;
+   margin-left: 42vw;
+   color: gray;
+   font-family: breadleysans !important;
+}
+
+.section3 .main{
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .card{
+   margin: 2vw;
+   cursor: pointer;
+}
+.section3 .lines{
+    text-align: center;
+}
+.item {
+    position: relative;
+}
+
+.item img{
+    margin-left: 10px;
+}
+.top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: ease;
+}
+.top:hover{
+    opacity: 1;
+    .bottom{
+        opacity: 0;
+    }
+}
+
+
+/*---------------------------------------------- section4------------------------------------------- */
+.section4{
+    max-width: 100%;
+}
+.section4 .heading{
+    margin-top: 2vh;
+   margin-left: 42vw;
+   color: gray;
+   font-family: breadleysans !important;
+}
+
+.section4 .main{
+    display: flex;
+    justify-content: center;
+}
+
+.section4 .card{
+   margin: 2vh 1vw 2vh 1vw;
+   cursor: pointer;
+}
+.section4 .lines{
+    text-align: center;
+}
+
+/* ----------------------- footer------------------------------------------------------ */
+.footer{
+    margin-top: 80px;
+    /* background-color: rgb(21, 74, 74); */
+    background-color: rgb(60, 4, 4);
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background:white;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+    font-size: 17px;
+    color:white;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+}
+.social a{
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    /* color: rgb(21, 74, 74); */
+    color: black;
+    
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
+
+.end{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 12px;
+}
+
+.end p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
